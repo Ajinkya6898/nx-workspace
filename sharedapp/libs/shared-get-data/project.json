@@ -1,0 +1,24 @@
+{
+  "name": "shared-get-data",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared-get-data/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared-get-data/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared-get-data"],
+      "options": {
+        "jestConfig": "libs/shared-get-data/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
