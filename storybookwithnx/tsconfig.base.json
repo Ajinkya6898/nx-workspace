@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nxwithsb/footer": ["libs/footer/src/index.ts"],
+      "@nxwithsb/navbar": ["libs/navbar/src/index.ts"],
+      "@nxwithsb/signin": ["libs/signin/src/index.ts"],
+      "@nxwithsb/signup": ["libs/signup/src/index.ts"],
+      "@nxwithsb/uibtn": ["libs/uibtn/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
